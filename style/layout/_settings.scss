@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+body{
+    background: #F5D0C1;
+}
+@mixin box{
+    height: 444px;
+    width: 425px;
+    background: #00ced1a6;
+    border-radius: 15px;
+    box-shadow: 11px 8px 6px 0px #00808084;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-bottom: 30px;
+    h3{
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.8rem;
+        margin-top: 50px;
+    }
+    button{
+        width: 80px;
+        margin-top: 30px;
+        padding: 5px 15px;
+        border-radius: 18px;
+        border: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            transform: scale(1.17);
+            box-shadow: 3px 6px 5px 1px #363636a1;
+        }
+    }
+}

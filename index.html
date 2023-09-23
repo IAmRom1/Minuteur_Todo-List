@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- App created by romainsavigny.be -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title class="monTitre" >Minuteur</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li class="P">Minuteur</li>
+            <li class="T">Pannel d'étude</li>
+            <li><a href="../Todo-List/index.html">Todo-List</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="notifC">
+        <div class="notifI"></div>
+        <p>Bonne session d'étude ! 😀</p>
+    </div>
+    <div class="notifF">
+        <div class="notifO"></div>
+        <p>Bonne session d'étude ! 😀</p>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <h3>30 min</h3>
+            <button type="submit" id="30min">GO</button>
+            <p>Temps restant:</p>
+            <div class="conterDisplay30"></div>
+        </div>
+        <div class="box2">
+            <h3>45 min</h3>
+            <button id="45min">GO</button>
+            <p>Temps restant:</p>
+            <div class="conterDisplay45"></div>
+        </div>
+        <div class="box3">
+            <h3>60 min</h3>
+            <button id="60min">GO</button>
+            <p>Temps restant:</p>
+            <div class="conterDisplay60"></div>
+        </div>
+    </div> 
+    <div class="container2">   
+        <div class="rect">
+            <div class="left">
+                <h3>Temps personnaliser:</h3>
+                <form action="">
+                    <input type="number" name="" id="choiceP" min="1"
+                    max="600" maxlength="3" minlength="1"
+                    title="Entrez le nombre de minute" autocomplete="off">
+                    <input type="submit" value="GO" id="timerPerso">
+                </form>
+            </div>
+            <div class="right">
+                <p>Temps restant:</p>
+                <div class="conterDisplayP"></div>
+            </div>    
+        </div>
+    </div>    
+    <!-- <input type="color" name="" id="colortest"> -->
+</body>
+<script src="./app.js"></script>
+<script src="./main.js"></script>
+
+</html>
