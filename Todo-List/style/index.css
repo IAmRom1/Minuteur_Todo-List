@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #F5D0C1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  font-size: 1.5rem;
+  color: rgb(52, 52, 52);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin: 10px;
+}
+nav .T {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 2rem;
+  text-decoration: underline;
+  letter-spacing: 2.5px;
+}
+nav .P {
+  font-weight: bold;
+}
+nav a {
+  color: rgb(52, 52, 52);
+}
+
+.box {
+  width: 596px;
+  min-height: 640px;
+  background: rgba(0, 206, 209, 0.6509803922);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 35%;
+  margin-top: 50px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 11px 8px 6px 0px rgba(0, 128, 128, 0.5176470588);
+}
+.box h1 {
+  margin-top: 15px;
+}
+.box input[type=text] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.536);
+  transition: 0.1s;
+  border: none;
+}
+.box input[type=text]:focus {
+  outline: 2px solid #FF6B00;
+  transition: 0.1s;
+}
+.box #list {
+  list-style: inside;
+}
+.box #list li {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.box #list li.Checked::before {
+  content: "✅";
+  font-size: 1.1rem;
+  border-radius: 100%;
+}
+.box #list li.Checked:hover::after {
+  content: " (cliquez pour supprimé)";
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}/*# sourceMappingURL=index.css.map */

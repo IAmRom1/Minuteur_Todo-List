@@ -1,0 +1,49 @@
+.box{
+    width: 596px;
+    min-height: 640px;
+    background: #00ced1a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    margin-top: 50px;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 11px 8px 6px 0px #00808084;
+    h1{
+        margin-top: 15px;
+    }
+    input[type="text"]{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.536);
+        transition: 0.1s;
+        border: none;
+        &:focus{
+            outline: 2px solid #FF6B00;
+            transition: 0.1s;
+        }
+    }
+    #list{
+        list-style: inside;
+        li{
+            padding: 20px;
+            font-size: 1.2rem;
+            &.Checked{
+                &::before{
+                    content: "✅";
+                    font-size: 1.1rem;
+                    border-radius: 100%;
+                }
+                &:hover::after{
+                    content: " (cliquez pour supprimé)";
+                    color: rgb(0, 0, 0);
+                    font-weight:600;
+                }
+        }
+        }
+    }
+}
