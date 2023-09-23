@@ -1,0 +1,67 @@
+# Minuteur et Liste de Tâches
+
+Ce projet consiste en une application de minuteur simple combinée à une liste de tâches. Il vous permet de gérer votre temps tout en gardant une trace de vos tâches à accomplir.
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir Node.js installé sur votre système. Vous pouvez le télécharger depuis [le site officiel de Node.js](https://nodejs.org/).
+
+## Installation
+
+1. Clonez ce dépôt GitHub sur votre ordinateur.
+
+```bash
+git clone https://github.com/IAmRom1/Minuteur_Todo-List.git
+```
+
+2. Accédez au répertoire du projet.
+
+```bash
+cd Minuteur_Todo-List
+```
+
+3. Installez les dépendances du projet en utilisant npm (Node Package Manager).
+
+```bash
+npm install
+```
+
+## Utilisation
+
+Pour lancer l'application, exécutez le script `start.bat`.
+
+L'application devrait maintenant être accessible depuis votre navigateur à l'adresse http://localhost:3000.
+
+## Fonctionnalités
+
+- Minuteur pour gérer le temps.
+- Liste de tâches pour garder une trace de ce que vous devez faire.
+- Possibilité de démarrer, arrêter et réinitialiser le minuteur.
+- Ajout et suppression de tâches.
+
+## Contribuer
+
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à créer une issue ou à envoyer une demande de pull (pull request) sur GitHub.
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+
+**start.bat**
+
+Créez un fichier `start.bat` dans le répertoire du projet avec le contenu suivant :
+
+```bash
+#!/bin/bash
+npm start
+```
+
+Assurez-vous que le fichier start.bat est exécutable en utilisant la commande suivante :
+
+```bash
+chmod +x start.bat
+```
+
+Cela permet d'autoriser l'exécution du script. Ensuite, pour lancer le projet, exécutez simplement ./start.bat dans le terminal.
+
+Les étapes et les informations dans le README restent les mêmes que précédemment, mais cette fois, le script de démarrage est écrit en bash.
